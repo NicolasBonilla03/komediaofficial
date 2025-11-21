@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personajes | Lucky Dip THE GAME</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/Luckydip/personajes.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER (MISMO QUE LUCKY DIP) ===== -->
+  <header class="navbar-luckydip">
+    <a href="/index.html" class="logo-link">
+      <img src="/css/Imagenes/KOmediaLOGOA-06 2.png" alt="KO Media Logo" class="logo-luckydip" />
+    </a>
+
+    <a href="/LuckyDip/LuckyDip.html" class="center-logo">
+  <img src="/css/Imagenes/image 73.png" alt="Lucky Dip Logo" class="luckydip-logo" />
+  <h3 class="the-game">THE GAME</h3>
+</a>
+
+    <nav class="nav-icons">
+      <a href="https://x.com/KO_Medi4"><img src="/css/Imagenes/xxxxx.png" alt="YouTube" class="social-icon" /></a>
+      <a href="https://www.instagram.com/ko._media/"><img src="/css/Imagenes/IG.png" alt="Instagram" class="social-icon" /></a>
+      <a href="https://www.tiktok.com/@ko.media86"><img src="/css/Imagenes/tt.png" alt="TikTok" style="width: 48px;" class="social-icon" /></a>
+    </nav>
+  </header>
+
+
+
+<!-- ===== GRID DE PERSONAJES ===== -->
+<main class="characters">
+  <div class="row row-top">
+    <!-- Tonino -->
+    <article class="char-card char-lg"
+      role="button" tabindex="0"
+      data-name="TONINO"
+      data-desc="Fatass."
+      data-img="/css/Imagenes/personajes/tonino.png"
+      data-color="#ffd646">
+      <h4 class="char-label top yellow">TONINO</h4>
+      <div class="char-portrait">
+        <img src="/css/Imagenes/personajes/tonino.png" alt="Tonino">
+      </div>
+    </article>
+
+    <!-- Koji -->
+    <article class="char-card char-lg"
+      role="button" tabindex="0"
+      data-name="KOJI"
+      data-desc="Fih."
+      data-img="/css/Imagenes/personajes/Koji.png"
+      data-color="#ff3b5c"
+      data-model="/koji/scene.gltf">
+      <h4 class="char-label top red">KOJI</h4>
+      <div class="char-portrait">
+        <img src="/css/Imagenes/personajes/Koji.png" alt="Koji">
+      </div>
+    </article>
+  </div>
+  
+  <div class="row row-bottom">
+    <!-- Bachiloca -->
+    <article class="char-card"
+      role="button" tabindex="0"
+      data-name="BACHILOCA"
+      data-desc="wadup twin."
+      data-img="/css/Imagenes/personajes/piraña.png"
+      data-color="#73ff7c"
+      data-model="/bachi/scene.gltf">
+      <div class="char-portrait octagon">
+        <img src="/css/Imagenes/personajes/piraña.png" alt="Bachiloca">
+      </div>
+      <h4 class="char-label bottom green">BACHILOCA</h4>
+    </article>
+
+    <!-- Pez Globo -->
+    <article class="char-card"
+      role="button" tabindex="0"
+      data-name="PEZ GLOBO"
+      data-desc="ballin."
+      data-img="/css/Imagenes/personajes/pezglobo.png"
+      data-color="#ffb980"
+      data-model="/globo/scene.gltf">
+      <div class="char-portrait">
+        <img src="/css/Imagenes/personajes/pezglobo.png" alt="Pez Globo">
+      </div>
+      <h4 class="char-label bottom orange">PEZ GLOBO</h4>
+    </article>
+
+    <!-- Tiburón Martillo -->
+    <article class="char-card"
+      role="button" tabindex="0"
+      data-name="TIBURÓN MARTILLO"
+      data-desc="pretty sure hes gay."
+      data-img="/css/Imagenes/personajes/tiburonmartillo.png"
+      data-color="#6aa7ff"
+      data-model="/Tiburon/scene.gltf">
+      <div class="char-portrait">
+        <img src="/css/Imagenes/personajes/tiburonmartillo.png" alt="Tiburón Martillo">
+      </div>
+      <h4 class="char-label bottom blue">TIBURÓN MARTILLO</h4>
+    </article>
+  </div>
+</main>
+
+<!-- Overlay de personaje -->
+<div class="char-overlay" id="charOverlay" aria-hidden="true">
+  <div class="overlay-backdrop" id="ovBackdrop"></div>
+
+  <div class="overlay-content">
+    <button class="overlay-close" id="ovClose" aria-label="Cerrar">✕</button>
+
+   <div class="overlay-left">
+  <!-- Contenedor 3D -->
+  <div id="ov3d" class="ov3d" hidden></div>
+
+  <!-- Fallback imagen (si no hay modelo) -->
+  <img id="ovImg" alt="">
+</div>
+
+
+    <aside class="overlay-right" id="ovPanel">
+      <h3 class="ov-name" id="ovName">NOMBRE</h3>
+      <p class="ov-desc" id="ovDesc">Descripción del personaje.</p>
+    </aside>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r133/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.133.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.133.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="personajes.js"></script>
+
+
+  <!-- (opcional) Footer igual al del sitio -->
+  <!-- <footer class="footer">...</footer> -->
+
+</body>
+</html>

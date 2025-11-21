@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>El Bar | Lucky Dip THE GAME</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/LuckyDip/niveles/niveles-detalle.css"/>
+</head>
+<body>
+
+  <!-- ===== HEADER (igual que el resto) ===== -->
+  <header class="navbar-luckydip">
+    <a href="/index.html" class="logo-link">
+      <img src="/css/Imagenes/KOmediaLOGOA-06 2.png" alt="KO Media Logo" class="logo-luckydip" />
+    </a>
+
+    <a href="/LuckyDip/LuckyDip.html" class="center-logo">
+  <img src="/css/Imagenes/image 73.png" alt="Lucky Dip Logo" class="luckydip-logo" />
+  <h3 class="the-game">THE GAME</h3>
+</a>
+
+    <nav class="nav-icons">
+      <a href="https://x.com/KO_Medi4"><img src="/css/Imagenes/xxxxx.png" alt="YouTube" class="social-icon" /></a>
+      <a href="https://www.instagram.com/ko._media/"><img src="/css/Imagenes/IG.png" alt="Instagram" class="social-icon" /></a>
+      <a href="https://www.tiktok.com/@ko.media86"><img src="/css/Imagenes/tt.png" alt="TikTok" style="width: 48px;" class="social-icon" /></a>
+    </nav>
+  </header>
+
+  <!-- Barra de progreso -->
+  <div class="scroll-progress"><span id="scrollBar"></span></div>
+
+  <main class="level-detail">
+    <!-- Hero -->
+    <section class="ld-hero reveal">
+      <!-- Después: contenedor para 3D -->
+      <div class="ld-hero-media" id="bar-hero-3d"></div>
+      <div class="ld-hero-info">
+        <h1>EL BAR</h1>
+        <p>Punto de inicio. Caos, peleas y botellas volando.</p>
+      </div>
+    </section>
+
+
+<!-- Enemigos (GRID 3) -->
+<section class="ld-section enemies-section reveal">
+  <div class="ld-text intro">
+    <h2>Enemigos</h2>
+    <p>Principales rivales que encontrarás aquí.</p>
+  </div>
+
+  <div class="enemies-grid">
+    <!-- Bachiloca -->
+    <article class="enemy-card">
+      <div class="enemy-media">
+        <img src="/css/Imagenes/personajes/piraña.png" alt="Bachiloca">
+      </div>
+      <h3 class="enemy-name">Bachiloca</h3>
+    </article>
+
+    <!-- Pez Globo -->
+    <article class="enemy-card">
+      <div class="enemy-media">
+        <img src="/css/Imagenes/personajes/pezglobo.png" alt="Pez Globo">
+      </div>
+      <h3 class="enemy-name">Pez Globo</h3>
+    </article>
+
+    <!-- Tiburón Martillo -->
+    <article class="enemy-card">
+      <div class="enemy-media">
+        <img src="/css/Imagenes/personajes/tiburonmartillo.png" alt="Tiburón Martillo">
+      </div>
+      <h3 class="enemy-name">Tiburón Martillo</h3>
+    </article>
+  </div>
+</section>
+
+    <!-- Dificultad -->
+    <section class="ld-section reverse reveal">
+      <div class="ld-media">
+        <img src="/css/Imagenes/EasyPixelV2.png" alt="Dificultad del Bar">
+      </div>
+      <div class="ld-text">
+        <h2>Dificultad</h2>
+        <p>Baja–Media. Ideal para aprender a pelear y moverse.</p>
+      </div>
+    </section>
+
+    <nav class="ld-nav">
+      <a class="btn back" href="/LuckyDip/niveles.html">← Volver a Niveles</a>
+      <a class="btn next" href="ascensor.html">Siguiente: El Ascensor →</a>
+    </nav>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r133/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.133.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.133.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="/LuckyDip/niveles/niveles-detalle.js"></script>
+</body>
+</html>

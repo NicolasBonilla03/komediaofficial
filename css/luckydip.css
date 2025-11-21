@@ -1,0 +1,446 @@
+/* Reset + Fonts */
+.roboto-flex {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Choose weight: 100–1000 */
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto flex', Medium;
+  background-color: #000;
+  color: #111;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9), transparent);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.logo {
+  width: 130px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-menu a {
+  font-weight: 900;
+  letter-spacing: 6px;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url("Imagenes/apolopolisluckydip.png") center top / cover no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* 🔹 Empuja contenido arriba/abajo */
+  align-items: end;
+  text-align: center;
+  padding: 60px 0 40px; /* 🔹 Margen arriba y abajo */
+}
+.hero .coming-soon {
+  font-weight: 900;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 21px;
+  margin-bottom: 40px; /* 🔹 Espacio del borde inferior */
+}
+.title {
+  font-size: 5rem;
+  font-weight: 900;
+  color: orange;
+  text-shadow: 4px 4px 0px purple;
+}
+.cta {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+  padding: 24px 48px;
+  background: #fff;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  
+}
+
+/* Productos Section */
+.productos {
+  padding: 100px 80px 80px;
+  background: #fff;
+}
+.productos h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+.accordion .item {
+  background: #f5f5f5;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.plus {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Estudio Section */
+.estudio {
+  background: url('Imagenes/wtfffff.png') center/cover no-repeat;
+  min-height: 100vh;
+  padding: 160px 80px;
+  position: relative;
+}
+.info-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 3rem;
+  max-width: 800px;
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #000;
+}
+
+/* Heading */
+.info-box h2 {
+  font-weight: 1000;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Section Titles like "MISIÓN", "VISIÓN" */
+.info-box h3 {
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* Paragraph text */
+.info-box p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #111;
+}
+
+
+
+/* Intro Section */
+/* ===== LUCKY DIP DESCRIPCIÓN ===== */
+/* Intro: la banda color piel */
+.intro {
+  background: linear-gradient(180deg, #dba67c 0%, #f3caa6 100%);
+  color: #111;
+  padding: 120px 80px;
+  padding-bottom: clamp(140px, 18vw, 220px); /* MÁS AIRE ABAJO */
+  position: relative;
+  overflow: hidden; /* <— evita que se monten sobre la siguiente sección */
+  font-family: "Roboto Flex", sans-serif;
+}
+
+/* Texto */
+.intro-title {
+  color: #3e247a;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-bottom: 2rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.intro-subtitle {
+  color: #111;
+  font-weight: 800;
+  font-size: 1.5rem;
+  max-width: 850px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Imágenes decorativas */
+.intro-chips {
+      position: absolute;
+    left: clamp(-141px, 0vw, 0px);
+    top: 149px;
+    width: 1000px;
+    /* transform: rotate(-8deg); */
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .25));
+    z-index: 1;
+    pointer-events: none;
+}
+.intro-character {
+  position: absolute;
+  right: clamp(-120px, 0vw, 0px);
+  bottom: -50px;                    /* estaba -120px */
+  width: min(70%, 1900px);
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,.25));
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Asegura que el texto esté por encima de las imágenes */
+.intro h2, .intro p { position: relative; z-index: 2; }
+
+/* Sección siguiente (productos): un poco de aire arriba */
+.productos {
+  margin-top: 0;
+  padding-top: 48px;   /* separa visualmente sin que se pisen */
+}
+
+
+/* Cards */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card {
+  background-color: #fde3c4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+}
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+/* Team Section */
+.team-section {
+  background-color: #fff;
+  padding: 60px 40px;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+}
+
+.team-member img {
+  width: 226px;
+  height: 226px;
+  margin-bottom: 1rem;
+}
+
+.team-member h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.team-member p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive Grid for wider screens */
+@media screen and (min-width: 768px) {
+  .team-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* ===== HEADER LUCKY DIP (FIJO) ===== */
+.navbar-luckydip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;/* 🔹 aumenta este valor (antes era 1.5rem 2rem) */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(5px); /* 🔹 efecto de desenfoque */
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Logo KO Media */
+.navbar-luckydip .logo {
+  width: 160px; /* 🔹 antes 130px, ahora un poco más grande */
+  height: auto;
+}
+
+.navbar-luckydip .social-icons img {
+  width: 36px; /* 🔹 antes 28–32px */
+  height: 36px;
+  margin-left: 20px;
+  transition: transform 0.2s ease;
+}
+
+.navbar-luckydip .social-icons img:hover {
+  transform: scale(1.15);
+}
+.logo-luckydip{
+    width: 220px;
+    height: auto;
+   transition: transform 0.2s ease-out;
+}
+
+.logo-luckydip:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Logo central del juego */
+.center-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+
+}
+
+.luckydip-logo {
+  width: 340px;
+  height: auto;
+}
+
+.the-game {
+  font-size: 2.0rem;
+  font-weight: 800;
+  color: #ffb980;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+/* Íconos sociales */
+.nav-icons {
+  display: flex;
+  align-items: center;
+
+  z-index: 1;
+  margin: 60px;
+}
+
+.social-icon {
+  width: 45px;
+  height: auto;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Compensar el espacio del header fijo */
+
+
+/* Animación de brillo tenue */
+@keyframes shimmer {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.engine-logos {
+  position: absolute;
+  bottom: 40px;   /* 🔹 Distancia desde el fondo */
+  right: 60px;    /* 🔹 Distancia desde la derecha */
+  display: flex;
+  align-items: center;
+  gap: 30px;      /* 🔹 Espacio entre logos */
+}
+
+.engine-logos img {
+  height: 40px;   /* 🔹 Tamaño uniforme */
+  width: auto;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.engine-logos img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  .engine-logos {
+    bottom: 20px;
+    right: 20px;
+    gap: 20px;
+  }
+
+  .engine-logos img {
+    height: 28px;
+  }
+
+  
+}

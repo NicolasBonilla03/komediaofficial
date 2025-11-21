@@ -1,0 +1,195 @@
+/* Reset + base */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Roboto Flex",sans-serif;
+  color:#fff;
+  background: url("/css/Imagenes/paneo planeta 0452 1.png") center/cover no-repeat, #000;
+  background-size: cover;
+  padding-top:150px; /* espacio para header fijo */
+}
+
+/* Header (igual a tus otras páginas) */
+.navbar-luckydip{
+  position:fixed; top:0; left:0; width:100%;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:0; z-index:9999;
+  background:linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(0,0,0,.1));
+  backdrop-filter: blur(6px);
+}
+.logo-luckydip{width:220px;height:auto;z-index:1;transition:transform .2s}
+.center-logo{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:inherit;z-index:1}
+.luckydip-logo{width:340px;height:auto}
+.the-game{font-size:2rem;font-weight:800;color:#ffb980;letter-spacing:5px;text-transform:uppercase;margin-top:.3rem}
+.nav-icons{display:flex;align-items:center;gap:1.2rem;z-index:1;margin:60px}
+.social-icon{width:45px;height:45px;opacity:.9;transition:.3s}
+.social-icon:hover{opacity:1;transform:scale(1.08)}
+
+/* Barra de progreso */
+.scroll-progress{
+  position:fixed; top:150px; left:0; width:100%; height:6px; z-index:9998;
+  background: rgba(255,255,255,.06);
+}
+#scrollBar{
+  display:block; height:100%; width:0%;
+  background: linear-gradient(90deg, #ffd646, #ffb980);
+  transition: width .1s linear;
+}
+
+/* Contenido */
+.level-detail{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 100px;
+  display: grid;
+  gap: clamp(28px, 4vw, 50px);
+}
+
+/* Hero grande con imagen amplia */
+.ld-hero{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.1);
+  background: rgba(255,255,255,.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,.45);
+}
+.ld-hero-media img{
+  width:100%; height:auto; display:block; filter: brightness(.95) contrast(1.02);
+}
+.ld-hero-info{
+  position:absolute; inset:auto 0 0 0;
+  padding: 18px 24px;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,.65) 60%);
+}
+.ld-hero-info h1{
+  font-weight:900; letter-spacing:.5rem; text-transform:uppercase;
+  color:#ffd646; font-size: clamp(1.6rem, 4vw, 2.6rem);
+}
+.ld-hero-info p{
+  margin-top:.4rem; color:#f1f1f1; font-weight:600; letter-spacing:.05rem;
+}
+
+/* Secciones par a par (imagen + texto) */
+.ld-section{
+  display:grid; grid-template-columns: 1.3fr 1fr; gap: clamp(16px, 3vw, 28px);
+  align-items:center;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+  padding: clamp(14px, 2.5vw, 20px);
+}
+.ld-section.reverse{ grid-template-columns: 1fr 1.3fr; }
+.ld-media img{ width:100%; height:auto; border-radius: 14px; display:block; }
+.ld-text h2{
+  color:#ffb980; font-weight:900; letter-spacing:.35rem; text-transform:uppercase;
+  margin-bottom:.6rem; font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+.ld-text p{ color:#e6e6e6; line-height:1.6; }
+
+/* Navegación inferior */
+.ld-nav{
+  display:flex; justify-content:space-between; align-items:center; margin-top: 8px;
+}
+.btn{
+  text-decoration:none; color:#111; font-weight:900; letter-spacing:.2rem; text-transform:uppercase;
+  padding:.8rem 1.2rem; border-radius:12px; background:#ffd646; border:2px solid #111;
+  box-shadow: 0 6px 0 #111; transition: transform .1s ease, box-shadow .1s ease;
+}
+.btn:hover{ transform: translateY(-2px); }
+.btn:active{ transform: translateY(2px); box-shadow: 0 2px 0 #111; }
+.btn.next{ background:#ffb980; }
+
+/* ===== Enemigos (Grid) ===== */
+.ld-section.enemies-section{
+  display: block; /* en vez de dos columnas */
+}
+
+.ld-section.enemies-section .ld-text.intro{
+  margin-bottom: clamp(14px, 2.4vw, 20px);
+}
+
+.enemies-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: clamp(16px, 2.6vw, 28px);
+}
+
+.enemy-card{
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 16px;
+  padding: 16px 16px 14px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.enemy-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 38px rgba(0,0,0,.45);
+  border-color: rgba(255,255,255,.18);
+}
+
+.enemy-media{
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.06);
+  margin-bottom: 12px;
+}
+
+.enemy-media img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* por si vienen PNGs con transparencia */
+  display: block;
+  filter: contrast(1.05) saturate(1.06);
+  transition: transform .25s ease;
+}
+
+.enemy-card:hover .enemy-media img{
+  transform: scale(1.04);
+}
+
+.enemy-name{
+  font-weight: 900;
+  letter-spacing: .22rem;
+  text-transform: uppercase;
+  color: #ffd646; /* acento Lucky Dip */
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .enemies-grid{ grid-template-columns: repeat(2, minmax(180px, 1fr)); }
+}
+@media (max-width: 640px){
+  .enemies-grid{ grid-template-columns: 1fr; }
+  .enemy-name{ letter-spacing: .16rem; }
+}
+
+
+/* Reveals al hacer scroll */
+.reveal{ opacity:0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.in-view{ opacity:1; transform: translateY(0); }
+
+/* HERO con modelo 3D */
+.ld-hero-media{
+  width: 100%;
+  height: clamp(300px, 60vh, 600px);
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255,255,255,.03);
+}
+
+.ld-hero-media canvas{
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+

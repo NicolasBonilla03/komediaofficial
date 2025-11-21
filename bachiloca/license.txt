@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bachiloca
+* source:	https://sketchfab.com/3d-models/bachiloca-b2f7f3141fab4bee9769e82eced254e3
+* author:	JFMV (https://sketchfab.com/JFMV)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bachiloca" (https://sketchfab.com/3d-models/bachiloca-b2f7f3141fab4bee9769e82eced254e3) by JFMV (https://sketchfab.com/JFMV) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
