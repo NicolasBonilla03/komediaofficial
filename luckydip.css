@@ -62,7 +62,7 @@ a {
 .hero {
   position: relative;
   height: 100vh;
-  background: url("Imagenes/apolopolisluckydip.png") center top / cover no-repeat;
+  background: url("css/Imagenes/apolopolisluckydip.png") center top / cover no-repeat;
   display: flex;
   flex-direction: row;
   justify-content: center; /* 🔹 Empuja contenido arriba/abajo */
